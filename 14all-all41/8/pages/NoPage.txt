@@ -1,0 +1,4 @@
+const NoPage = () => {
+    return <h1 align="center">No page found buddy</h1>;
+    };
+    export default NoPage;  

@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Form Elements</title>
+</head>
+<body>
+<form>
+
+    <lable>Text Box</lable>
+    <input type="text" id="t1" name="name" value=""/><br><br>
+    Radio Button: <br>
+    <input type="radio" id="r1" name="r1" value=""/>Male<br>
+    <input type="radio" id="r1" name="r1" value=""/>Female<br><br>
+
+    Hobbies:<br>
+    1.Games<input type="checkbox" id="c1" name="" value=""/><br>
+    2.Writing<input type="checkbox" id="c2" name="" value=""/><br>
+    3.Reading<input type="checkbox" id="c3" name="" value=""/><br>
+    4.Music<input type="checkbox" id="c4" name="" value=""/><br><br>
+
+    File: &nbsp; <input type="file" id="e1" name="file" value=""/><br><br>
+
+    
+    <label>Select Sem</label>
+    <select name="sem" id="sem">
+        <option value="1">1 Sem</option>
+        <option value="2">2 Sem</option>
+        <option value="2">3 Sem</option>
+        <option value="2">4 Sem</option>
+        <option value="2">5 Sem</option>
+        <option value="2">6 Sem</option>
+    </select><br><br>
+
+    Comment:<br>
+    <textarea id="ta1" name="textarea" rows="4" cols="50">
+    Write a bit about yourself here
+    </textarea><br><br>
+
+    <fieldset>
+        <legend>Personal Details:</legend>
+        <label>First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label>Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+    </fieldset><br><br>
+    <input type="button" id="t1" name="" value="Submit"/><br>
+</form>
+</body>
+</html>

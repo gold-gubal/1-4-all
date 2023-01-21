@@ -1,0 +1,28 @@
+@SpringBootTest
+class SpringbootFirstAppApplicationTests {
+@Autowired
+UserRepository userRepo;
+@Test
+public void testCreate()
+{
+User u=new User();
+u.setId(3L);
+u.setFirstname("Kavya");
+u.setLasttname("shree");
+userRepo.save(u);
+assertNotNull(userRepo.findById(902L).get());
+}
+@Test
+public void testDelete()
+{
+userRepo.deleteById(2L);
+assertThat(userRepo.existsById(852L)).isFalse();
+}
+@Test
+public void testReadAll()
+{
+List<User> list=userRepo.findAll();
+assertThat(list).size().isGreaterThan(0);
+}
+
+}
